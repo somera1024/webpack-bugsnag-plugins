@@ -85,7 +85,7 @@ class BugsnagSourceMapUploaderPlugin {
     const opts = {
       apiKey: this.apiKey,
       appVersion: this.appVersion,
-      minifiedUrl: sm.url,
+      minifiedUrl: sm.url+'*',
       minifiedFile: sm.source,
       sourceMap: sm.map
     }
