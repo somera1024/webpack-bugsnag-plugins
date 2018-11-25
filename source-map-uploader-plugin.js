@@ -89,6 +89,7 @@ class BugsnagSourceMapUploaderPlugin {
       minifiedFile: sm.source,
       sourceMap: sm.map
     }
+    console.log(opts);
     if (this.endpoint) opts.endpoint = this.endpoint
     if (this.overwrite) opts.overwrite = this.overwrite
     return opts
